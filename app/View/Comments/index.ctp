@@ -4,11 +4,10 @@
 	<thead>
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
+			<th><?php echo $this->Paginator->sort('title_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('text'); ?></th>
 			<th><?php echo $this->Paginator->sort('user_name'); ?></th>
-			<th><?php echo $this->Paginator->sort('title_id'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -16,13 +15,12 @@
 	<?php foreach ($comments as $comment): ?>
 	<tr>
 		<td><?php echo h($comment['Comment']['id']); ?>&nbsp;</td>
-		<td><?php echo h($comment['Comment']['modified']); ?>&nbsp;</td>
-		<td><?php echo h($comment['Comment']['created']); ?>&nbsp;</td>
-		<td><?php echo h($comment['Comment']['text']); ?>&nbsp;</td>
-		<td><?php echo h($comment['Comment']['user_name']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($comment['Title']['titel_name'], array('controller' => 'titles', 'action' => 'view', $comment['Title']['id'])); ?>
 		</td>
+		<td><?php echo h($comment['Comment']['modified']); ?>&nbsp;</td>
+		<td><?php echo h($comment['Comment']['created']); ?>&nbsp;</td>
+		<td><?php echo h($comment['Comment']['user_name']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $comment['Comment']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $comment['Comment']['id'])); ?>
@@ -31,6 +29,20 @@
 	</tr>
 <?php endforeach; ?>
 	</tbody>
+	</table>
+	<table>
+		<thead>
+		<tr>
+			<th><?php echo $this->Paginator->sort('text'); ?></th>
+		</tr>
+		</thead>
+		<tbody>
+		<?php foreach ($comments as $comment): ?>
+			<tr>
+				<td><?php echo h($comment['Comment']['text']); ?>&nbsp;</td>
+			</tr>
+		<?php endforeach; ?>
+		</tbody>
 	</table>
 	<p>
 	<?php
