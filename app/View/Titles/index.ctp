@@ -7,7 +7,6 @@
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('titel_name'); ?></th>
-			<th><?php echo $this->Paginator->sort('comment_id'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -18,9 +17,6 @@
 		<td><?php echo h($title['Title']['modified']); ?>&nbsp;</td>
 		<td><?php echo h($title['Title']['created']); ?>&nbsp;</td>
 		<td><?php echo h($title['Title']['titel_name']); ?>&nbsp;</td>
-		<td>
-			<?php echo $this->Html->link($title['Comment']['id'], array('controller' => 'comments', 'action' => 'view', $title['Comment']['id'])); ?>
-		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $title['Title']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $title['Title']['id'])); ?>

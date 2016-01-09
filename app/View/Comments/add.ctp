@@ -5,6 +5,7 @@
 	<?php
 		echo $this->Form->input('text');
 		echo $this->Form->input('user_name');
+		echo $this->Form->input('title_id');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

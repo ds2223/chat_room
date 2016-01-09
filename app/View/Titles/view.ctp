@@ -21,11 +21,6 @@
 			<?php echo h($title['Title']['titel_name']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Comment'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($title['Comment']['id'], array('controller' => 'comments', 'action' => 'view', $title['Comment']['id'])); ?>
-			&nbsp;
-		</dd>
 	</dl>
 </div>
 <div class="actions">

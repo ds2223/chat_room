@@ -16,6 +16,7 @@ class CommentFixture extends CakeTestFixture {
 		'created' => array('type' => 'datetime', 'null' => false, 'default' => null),
 		'text' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 128, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'user_name' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 32, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+		'title_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1)
 		),
@@ -30,10 +31,11 @@ class CommentFixture extends CakeTestFixture {
 	public $records = array(
 		array(
 			'id' => 1,
-			'modified' => '2016-01-09 09:22:35',
-			'created' => '2016-01-09 09:22:35',
+			'modified' => '2016-01-09 09:39:49',
+			'created' => '2016-01-09 09:39:49',
 			'text' => 'Lorem ipsum dolor sit amet',
-			'user_name' => 'Lorem ipsum dolor sit amet'
+			'user_name' => 'Lorem ipsum dolor sit amet',
+			'title_id' => 1
 		),
 	);
 

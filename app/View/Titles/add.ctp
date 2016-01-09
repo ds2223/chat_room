@@ -4,7 +4,6 @@
 		<legend><?php echo __('Add Title'); ?></legend>
 	<?php
 		echo $this->Form->input('titel_name');
-		echo $this->Form->input('comment_id');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

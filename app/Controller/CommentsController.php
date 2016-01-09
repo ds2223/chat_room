@@ -56,6 +56,8 @@ class CommentsController extends AppController {
 				$this->Session->setFlash(__('The comment could not be saved. Please, try again.'));
 			}
 		}
+		$titles = $this->Comment->Title->find('list');
+		$this->set(compact('titles'));
 	}
 
 /**
@@ -80,6 +82,8 @@ class CommentsController extends AppController {
 			$options = array('conditions' => array('Comment.' . $this->Comment->primaryKey => $id));
 			$this->request->data = $this->Comment->find('first', $options);
 		}
+		$titles = $this->Comment->Title->find('list');
+		$this->set(compact('titles'));
 	}
 
 /**

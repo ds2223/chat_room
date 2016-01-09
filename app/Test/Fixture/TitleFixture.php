@@ -15,7 +15,6 @@ class TitleFixture extends CakeTestFixture {
 		'modified' => array('type' => 'datetime', 'null' => false, 'default' => null),
 		'created' => array('type' => 'datetime', 'null' => false, 'default' => null),
 		'titel_name' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 64, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
-		'comment_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1)
 		),
@@ -30,10 +29,9 @@ class TitleFixture extends CakeTestFixture {
 	public $records = array(
 		array(
 			'id' => 1,
-			'modified' => '2016-01-09 09:23:47',
-			'created' => '2016-01-09 09:23:47',
-			'titel_name' => 'Lorem ipsum dolor sit amet',
-			'comment_id' => 1
+			'modified' => '2016-01-09 09:40:46',
+			'created' => '2016-01-09 09:40:46',
+			'titel_name' => 'Lorem ipsum dolor sit amet'
 		),
 	);
 
