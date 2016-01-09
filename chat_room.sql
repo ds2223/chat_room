@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2016 年 1 朁E08 日 13:14
+-- Generation Time: 2016 年 1 朁E09 日 08:48
 -- サーバのバージョン： 5.6.25
 -- PHP Version: 5.6.11
 
@@ -23,28 +23,29 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `texts`
+-- テーブルの構造 `comment`
 --
 
-CREATE TABLE IF NOT EXISTS `texts` (
+CREATE TABLE IF NOT EXISTS `comment` (
   `id` int(11) NOT NULL,
-  `created` int(11) NOT NULL,
-  `modified` int(11) NOT NULL,
-  `text_page` varchar(64) NOT NULL,
-  `user_id` int(11) NOT NULL
+  `modified` datetime NOT NULL,
+  `created` datetime NOT NULL,
+  `text` varchar(128) NOT NULL,
+  `user_name` varchar(32) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `users`
+-- テーブルの構造 `titles`
 --
 
-CREATE TABLE IF NOT EXISTS `users` (
+CREATE TABLE IF NOT EXISTS `titles` (
   `id` int(11) NOT NULL,
-  `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
-  `user_name` varchar(64) NOT NULL
+  `created` datetime NOT NULL,
+  `titel_name` varchar(64) NOT NULL,
+  `coment_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -52,15 +53,15 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 --
--- Indexes for table `texts`
+-- Indexes for table `comment`
 --
-ALTER TABLE `texts`
+ALTER TABLE `comment`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `users`
+-- Indexes for table `titles`
 --
-ALTER TABLE `users`
+ALTER TABLE `titles`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -68,14 +69,14 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `texts`
+-- AUTO_INCREMENT for table `comment`
 --
-ALTER TABLE `texts`
+ALTER TABLE `comment`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT for table `titles`
 --
-ALTER TABLE `users`
+ALTER TABLE `titles`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
