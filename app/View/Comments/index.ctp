@@ -26,25 +26,12 @@
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $comment['Comment']['id'])); ?>
 			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $comment['Comment']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $comment['Comment']['id']))); ?>
 		</td>
-
-	</tr>
+		</tr>
+			<td><?php echo "" ?>&nbsp;</td>
+			<td colspan="5"><?php echo h($comment['Comment']['text']); ?>&nbsp;</td>
+		</tr>
 <?php endforeach; ?>
 	</tbody>
-	</table>
-	<table>
-		<thead>
-		<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('text'); ?></th>
-		</tr>
-		</thead>
-		<tbody>
-		<?php foreach ($comments as $comment): ?>
-			<tr>
-				<td><?php echo h($comment['Comment']['text']); ?>&nbsp;</td>
-			</tr>
-		<?php endforeach; ?>
-		</tbody>
 	</table>
 	<p>
 	<?php
