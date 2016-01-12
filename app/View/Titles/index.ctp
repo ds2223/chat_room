@@ -1,5 +1,14 @@
 <div class="titles index">
 	<h2><?php echo __('Titles'); ?></h2>
+	<div class="actions">
+		<h3><?php echo __('Actions'); ?></h3>
+		<ul style="display:inline-flex">
+			<li><?php echo $this->Html->link(__('New Title'), array('action' => 'add')); ?></li>
+			<li><?php echo $this->Html->link(__('List Comments'), array('controller' => 'comments', 'action' => 'index')); ?> </li>
+			<li><?php echo $this->Html->link(__('New Comment'), array('controller' => 'comments', 'action' => 'add')); ?> </li>
+		</ul>
+	</div>
+
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
@@ -39,12 +48,4 @@
 		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
 	?>
 	</div>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('New Title'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Comments'), array('controller' => 'comments', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Comment'), array('controller' => 'comments', 'action' => 'add')); ?> </li>
-	</ul>
 </div>
