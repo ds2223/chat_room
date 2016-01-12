@@ -66,12 +66,7 @@ h4 {
 	font-weight: normal;
 }
 
-ul{
-	list-style: none;
-}
-li{
-	float:left;
-}
+
 ul, li {
 	margin: 0 12px;
 }
