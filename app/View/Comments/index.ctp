@@ -26,6 +26,7 @@
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $comment['Comment']['id'])); ?>
 			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $comment['Comment']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $comment['Comment']['id']))); ?>
 		</td>
+
 	</tr>
 <?php endforeach; ?>
 	</tbody>
@@ -33,6 +34,7 @@
 	<table>
 		<thead>
 		<tr>
+			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('text'); ?></th>
 		</tr>
 		</thead>
