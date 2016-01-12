@@ -8,6 +8,13 @@ App::uses('AppModel', 'Model');
 class Title extends AppModel {
 
 /**
+ * Display field
+ *
+ * @var string
+ */
+	public $displayField = 'titel_name';
+
+/**
  * Validation rules
  *
  * @var array

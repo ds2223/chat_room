@@ -22,7 +22,7 @@
 		<td><?php echo h($comment['Comment']['created']); ?>&nbsp;</td>
 		<td><?php echo h($comment['Comment']['user_name']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $comment['Comment']['id'])); ?>
+			<?php echo $this->Html->link(__('View','閲覧'), array('action' => 'view', $comment['Comment']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $comment['Comment']['id'])); ?>
 			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $comment['Comment']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $comment['Comment']['id']))); ?>
 		</td>

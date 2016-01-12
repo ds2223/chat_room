@@ -31,8 +31,8 @@ class CommentFixture extends CakeTestFixture {
 	public $records = array(
 		array(
 			'id' => 1,
-			'modified' => '2016-01-09 09:39:49',
-			'created' => '2016-01-09 09:39:49',
+			'modified' => '2016-01-12 10:07:53',
+			'created' => '2016-01-12 10:07:53',
 			'text' => 'Lorem ipsum dolor sit amet',
 			'user_name' => 'Lorem ipsum dolor sit amet',
 			'title_id' => 1

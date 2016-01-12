@@ -29,8 +29,8 @@ class TitleFixture extends CakeTestFixture {
 	public $records = array(
 		array(
 			'id' => 1,
-			'modified' => '2016-01-09 09:40:46',
-			'created' => '2016-01-09 09:40:46',
+			'modified' => '2016-01-12 10:08:38',
+			'created' => '2016-01-12 10:08:38',
 			'titel_name' => 'Lorem ipsum dolor sit amet'
 		),
 	);

@@ -8,6 +8,13 @@ App::uses('AppModel', 'Model');
 class Comment extends AppModel {
 
 /**
+ * Display field
+ *
+ * @var string
+ */
+	public $displayField = 'title_id';
+
+/**
  * Validation rules
  *
  * @var array
