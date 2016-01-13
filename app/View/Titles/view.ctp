@@ -1,5 +1,4 @@
 <div class="titles view">
-<h2><?php echo __('Title'); ?></h2>
 	<div class="actions">
 		<h3><?php echo __('Actions'); ?></h3>
 		<ul style="display:inline-flex">
@@ -11,7 +10,7 @@
 			<li><?php echo $this->Html->link(__('New Comment'), array('controller' => 'comments', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
-
+<h2><?php echo __('Title'); ?></h2>
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>
 		<dd>
