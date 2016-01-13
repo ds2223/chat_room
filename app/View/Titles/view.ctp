@@ -32,5 +32,12 @@
 			<?php echo h($title['Title']['titel_name']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('text'); ?></dt>
+
+		<dd>
+
+			
+		</dd>
+
 	</dl>
 </div>
