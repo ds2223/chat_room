@@ -123,8 +123,10 @@ div.index,
 div.view {
 	/* float:right; */
 	width:76%;
-	border-left:1px solid #666;
+	/* border-left:1px solid #ff4500;
+	border-right:1px solid #ff4500; */
 	padding:10px 2%;
+	margin: 0 auto;
 }
 div.actions {
 	/* float:left; */

@@ -1,5 +1,4 @@
 <div class="comments index">
-	<h2><?php echo __('Comments'); ?></h2>
 	<div class="actions">
 		<h3><?php echo __('Actions'); ?></h3>
 		<ul style="display:inline-flex">
@@ -8,6 +7,7 @@
 			<li><?php echo $this->Html->link(__('New Title'), array('controller' => 'titles', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
+	<h2><?php echo __('Comments'); ?></h2>
 	<table cellpadding="2" cellspacing="2">
 	<thead>
 	<tr>
@@ -54,4 +54,5 @@
 		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
 	?>
 	</div>
+
 </div>
